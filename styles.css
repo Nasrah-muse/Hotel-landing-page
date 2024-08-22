@@ -14,8 +14,8 @@ body {
 header {
     width: 100%;
     height: 5rem;
-    background-color: #083D77;
-    box-shadow: 0 0 10px 2px #706e6e;
+    background-color: #2b2d42;
+    box-shadow: 0 0 10px 2px #2b2d42;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -40,13 +40,13 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
-    color: #EBEBD3;
+    color: #a0c2e2;
     text-decoration: none;
 }
 
 .navbar .logo i {
     font-size: 2rem;
-    color: #706e6e;
+    color: #e31833;
 }
 
 .nav-links {
@@ -66,33 +66,96 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #EBEBD3;
+    color: #a0c2e2;
     font-size: 1rem;
     font-weight: 400;
 }
 
 .nav-links a:hover {
-    color: #706e6e;
+    color: #e31833;
 
 }
 
 .nav-links .login {
-    background-color: #7A94A5;
+    background-color:#e31833;
     padding: 10px 20px;
     border-radius: 50px;
     text-align: center;
-    color: #EBEBD3;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .nav-links .login:hover {
-    background-color: #706e6e;
-    color: #EBEBD3;
-
+    background-color:#8d99af;
+ 
 }
 
 .hamburger {
     display: none;
 }
+
+.hero{
+    width: 100%;
+    height: calc(100vh - 5rem);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero .container{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+ .container .hero-content{
+    width: 80%;
+      display: flex;
+     flex-direction: column;
+     gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+ }
+  .container .hero-content h1{
+     font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+ }
+  .container .hero-content h3{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #8d99af;
+    text-align: center;
+  }
+  .container .hero-content p{
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+ }
+ 
+  .container .btn{
+    background-color: #e31833;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+     transition: background-color 0.3s;
+  }
+  .container .btn:hover{
+    background-color: #8d99af;
+    }
+
+
+
+
+
 
 /* RESPONSIVE */
 
@@ -123,7 +186,7 @@ header {
         height: 400px;
         padding: 10px 0;
         text-align: center;
-        background-color: #083D77;
+        background-color:#2b2d42;
         transform: translateY(0%);
         transition: transform 0.3s;
 
@@ -140,4 +203,18 @@ header {
     .hamburger i[data-visible="false"] {
         display: none;
     }
+    .hero{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+    .container .hero-content{
+        width: 100%;
+         
+     }
+    
+      .container .hero-content h2{
+        font-size: 1rem;
+      
+      }
 }
