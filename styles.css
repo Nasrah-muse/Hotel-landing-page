@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: lavender;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    background-color: #083D77;
+    box-shadow: 0 0 10px 2px #706e6e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: min(90%, 1400px);
+    margin-inline: auto;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+.navbar .logo a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EBEBD3;
+    text-decoration: none;
+}
+
+.navbar .logo i {
+    font-size: 2rem;
+    color: #706e6e;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 1001;
+
+}
+
+.nav-links li {
+    list-style: none;
+    position: relative;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #EBEBD3;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav-links a:hover {
+    color: #706e6e;
+
+}
+
+.nav-links .login {
+    background-color: #7A94A5;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    color: #EBEBD3;
+}
+
+.nav-links .login:hover {
+    background-color: #706e6e;
+    color: #EBEBD3;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .navbar {
+        padding: 15px 0;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10%;
+        font-size: 2rem;
+        color: #EBEBD3;
+    }
+
+
+    .nav-links {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        font-weight: 800;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 400px;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #083D77;
+        transform: translateY(0%);
+        transition: transform 0.3s;
+
+    }
+
+    .nav-links[data-visible="false"] {
+        transform: translateY(-200%);
+    }
+
+    .hamburger i[data-visible="true"] {
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"] {
+        display: none;
+    }
+}
