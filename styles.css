@@ -83,6 +83,7 @@ header {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    font-weight: 800;
 }
 
 .nav-links .login:hover {
@@ -153,6 +154,76 @@ header {
     }
 
 
+/* About */
+.about .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-block: 100px ;
+    background-color: rgba(75, 103, 156, 0.1);
+    border-radius: 50px;
+    padding: 0 20px;
+  }
+.container .side-bar{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+ .side-bar h2{
+    font-weight: 800;
+    color: #e31833;
+ }
+ .side-bar p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2b2d42;
+ }
+.container .about-info{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+ .about-info h4{
+    font-weight: 800;
+    color: #2b2d42;
+    text-align: center;
+ }
+ .about-info p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2b2d42;
+    text-align: center;
+ }
+ .about-info .btn{
+    width: 50%;
+     border-radius: 10px;
+ }
+.about-info .about-images{
+width: 100%;
+height: auto;
+ display: flex;
+  gap: 1rem;
+ align-items: center;
+ justify-content: space-between;
+ align-items: center;
+  flex-wrap: wrap;
+}
+.about-images img{
+    width: 30%;
+    height: 300px;
+    border-radius: 50px;
+}
 
 
 
@@ -217,4 +288,31 @@ header {
         font-size: 1rem;
       
       }
+      /*  about */
+      .about .container{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        flex-direction: column;
+        
+      }
+      .container .side-bar{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .container .about-info{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+        
+    }
+    .about-info .about-images{
+        width: 100%;
+       flex-direction: column;
+        }
+        .about-images img{
+            width: 100%;
+            height: 100%;
+         }
 }
