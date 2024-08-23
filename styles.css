@@ -289,7 +289,7 @@ header {
     width: 500px;
     height: 250px;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     background-color: rgba(141, 153, 175, 0.1);
@@ -323,9 +323,9 @@ header {
 }
 
 .service-cards .service-card h3 {
-    font-size: 1rem;
+    font-size:1rem;
     font-weight: 800;
-    color: #a0c2e2;
+    color:#a0c2e2;
     text-align: center;
 }
 
@@ -350,6 +350,125 @@ header {
     color: #fff;
     border: none;
 }
+
+/*  Rooms */
+
+.rooms {
+    width: 100%;
+    height: 200vh;
+     display: flex;
+    flex-direction: column;
+    margin-block: 100px;
+ }
+
+.rooms .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.container .rooms-title{
+    width: 40%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .rooms-title h2{
+    font-weight: 800;
+    color: #e31833;
+    text-align: center;
+ }
+ .rooms-title h2 span{
+    color: #2b2d42;
+  
+ } 
+ .rooms-title p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2b2d42;
+    text-align: center;
+ }
+.container .room-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+ }
+
+.room-cards .room-card{
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+      background-color:#a0c2e2;
+    box-shadow: 0 0 4px 2px #8d99af;
+
+   }
+ .room-card img{
+    width: 100%;
+    height: 200px;
+ 
+ }
+ .room-card .room-info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 10px;
+     }
+ .room-info h3{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #2b2d42;
+  }
+  .room-info p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2b2d42;
+  }
+  .room-info .room-specification{
+    display: flex;
+    justify-content: space-between;
+    }
+   .room-specification span{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #2b2d42;
+  }
+  .room-specification span i{
+    color: #e31833;
+  }
+  .room-info .room-price a{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 800;
+    color: #fff;
+     width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:12px 20px;
+    background: #e31833;
+    border-radius: 10px;
+  }
+  .room-info .room-price a:hover{
+    background-color: #2b2d42;
+
+  }
+ 
+
+
 
 /* Reviews / Testimonials */
 .reviews {
@@ -449,8 +568,8 @@ header {
     font-size: 1rem;
 }
 
-/* Contact */
-.contact {
+/* Reservation */
+.reservation {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -459,18 +578,11 @@ header {
     align-items: center;
     justify-content: center;
     margin-block: 100px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+    background: linear-gradient(rgba(91, 131, 189, 0.8), rgba(68, 149, 186, 0.8)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsfGVufDB8fDB8fHww') no-repeat center/cover;
 }
 
-.contact h2 {
-    color: #a0c2e2;
-    font-weight: 800;
-}
 
-.contact h2 span {
-    color: #e31833;
-}
-
+ 
 .form-map {
     width: 100%;
     height: auto;
@@ -480,67 +592,81 @@ header {
 
 }
 
-.contact .contact-form {
+.reservation .reserve-form {
     width: 50%;
     height: 500px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: rgba(160, 194, 226, 0.2);
+    justify-content: center;
+    background-color: rgba(43, 45, 66,0.1);
 
 }
 
-.contact-form form {
-    width: 80%;
+.reserve-form form h2 {
+    font-weight: 800;
+    color:#a0c2e2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reserve-form form {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+     gap: 2rem;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.reserve-form form .info{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
-}
+    justify-content: center;
+  }
 
-.contact-form form input {
-    width: 100%;
-    height: 50px;
-    border-radius: 20px;
-    padding: 10px;
-    border: none;
+.reserve-form form input, select {
+    width: 40%;
+    height: 40px;
+     padding: 10px;
+    border: 2px solid #a0c2e2;
     outline: none;
-    background: #fff;
-    color: #a0c2e2;
+    background:transparent;
+    color: #fff;
+}
+.reserve-form form input::placeholder{
+    color: #fff;
+
+
 }
 
-.contact-form form textarea {
-    width: 100%;
-    border-radius: 20px;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #a0c2e2;
-}
 
-.contact-form form input:hover,
-.contact-form form textarea:hover {
+
+.reserve-form form input:hover,
+.reserve-form form textarea:hover {
     border: 2px solid #e31833;
 }
 
-.contact-form form button {
+.reserve-form form button {
     width: 50%;
     height: 50px;
     border-radius: 50px;
     text-transform: uppercase;
     border: none;
-    background: #a0c2e2;
-    color: #2b2d42;
+    background: #e31833;
+    color: #fff;
     transition: 0.5s ease;
     font-weight: 800;
     padding: 10px;
 }
 
-.contact-form form button:hover {
-    background: #e31833;
-    color: #fff;
+.reserve-form form button:hover {
+
+    background: #a0c2e2;
+    color: #2b2d42;
 }
 
 .map {
@@ -646,7 +772,7 @@ footer .container ul li a:hover {
         font-size: 1.5rem;
         width: 100%;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         font-weight: 800;
         position: fixed;
         top: 0;
@@ -766,6 +892,34 @@ footer .container ul li a:hover {
     .service-cards .service-card img {
         width: 100%;
     }
+/* Rooms */
+.rooms {
+    width: 100%;
+    height: 100%;
+ 
+}
+.container .rooms-title{
+    width: 100%;
+    height: 100%;
+   
+ }
+.container .room-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
+ }
+
+.room-cards .room-card{
+    width: 100%;
+    height: 100%;
+}
+.room-card .room-info{
+    
+    padding:  20px 10px;
+     }
+ 
 
     /* Reviews */
     .reviews {
@@ -804,7 +958,7 @@ footer .container ul li a:hover {
     }
 
     /* Contact */
-    .contact {
+    .reservation {
         width: 100%;
         height: 100%;
 
@@ -817,14 +971,23 @@ footer .container ul li a:hover {
 
     }
 
-    .contact .contact-form {
+    .reservation .reserve-form {
         width: 100%;
         height: 100%;
-        padding: 20px 0;
+         padding: 20px 0;
+    }
+    .reserve-form form {
+        width: 100%;
+
+       }
+    .reserve-form form input, select {
+        width: 40%;
+        height: 40px;
+        
     }
 
-    .contact-form form button {
-        width: 100%;
+    .reserve-form form button {
+        width: 80%;
         height: 100%;
 
     }
