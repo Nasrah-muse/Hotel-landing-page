@@ -44,13 +44,7 @@ hamburger.addEventListener("click", function (event) {
     }
 });
 
-
-
 ```
- 
-
- 
-
 ## Color Scheme
 
 The website uses a cohesive and visually appealing color scheme to enhance the user experience. Below is a table listing the colors used:
@@ -77,3 +71,6 @@ The website uses a cohesive and visually appealing color scheme to enhance the u
     cd hotel-landing-page
     ```
 3. Open `index.html` in your preferred web browser.
+
+## Live Demo 
+- `[here](https://hotel-landing-page-five.vercel.app/)
