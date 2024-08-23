@@ -225,7 +225,85 @@ height: auto;
     border-radius: 50px;
 }
 
+/* Services */
+.services{
+    width: 100%;
+    height: 1000px;
+    background-color: #2b2d42;
+     display: flex;
+    flex-direction: column;
+  }
+ .services .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+     gap: 2rem;
+   
+ }
+  .services h2{
+    font-weight: 800;
+    color: #a0c2e2;
+    text-align: center;
+  }
+  .service-cards{
+     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    }
 
+  .service-cards .service-card{
+    width: 500px;
+    height: 250px;
+     display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(141, 153, 175,0.1);
+    border-radius: 50px;
+     }
+  .service-cards .service-card img{
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+
+  }
+ .service-card .service-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+ }
+  .service-cards .service-card h3{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #a0c2e2;
+    text-align: center;
+  }
+  .service-cards .service-card p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #8d99af;
+    text-align: center;
+  }
+  .service-cards .service-card .btn{
+     border-radius: 8px;
+     background: transparent;
+     color: #e31833;
+     border: 1px solid #a0c2e2;
+     transition: 0.8s ease;
+  
+  }
+  .service-cards .service-card .btn:hover{
+     background-color: #e31833;
+     color: #fff;
+     border: none;
+   }
 
 
 /* RESPONSIVE */
@@ -315,4 +393,44 @@ height: auto;
             width: 100%;
             height: 100%;
          }
+         /* Services */
+         .services{
+            width: 100%;
+            height: 100%;
+             
+          }
+          .service-cards{
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 20px 0;
+            
+             }
+             .service-cards .service-card{
+                width: 50%;
+                height: 100%;
+                flex-direction: column;
+                gap: 10px;
+                
+             }
+             .service-cards .service-card img{
+                width: 100%;
+              }
+              .service-cards .service-card h3{
+                font-size: 1rem;
+                font-weight: 800;
+                color: #a0c2e2;
+                text-align: left;
+             }
+         .service-cards .service-card{
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            gap: 10px;
+            
+             }
+             .service-cards .service-card img{
+                width: 100%;
+              }
 }
