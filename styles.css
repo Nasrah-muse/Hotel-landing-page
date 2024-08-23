@@ -636,6 +636,7 @@ header {
     outline: none;
     background:transparent;
     color: #fff;
+    font-size: 14px;
 }
 .reserve-form form input::placeholder{
     color: #fff;
