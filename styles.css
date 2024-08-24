@@ -56,7 +56,7 @@ header {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1.5rem;
     position: relative;
     z-index: 1001;
 
@@ -72,7 +72,7 @@ header {
     text-decoration: none;
     color: #a0c2e2;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 300;
  }
 .nav-links a:hover,
 .nav-links a:focus {
