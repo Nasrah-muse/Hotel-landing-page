@@ -145,7 +145,7 @@ header {
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center/cover;
 
     }
-    900% {
+    90% {
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center/cover;
 
     }
@@ -179,19 +179,13 @@ header {
     text-align: center;
 }
 
-.container .hero-content h3 {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    font-weight: 800;
-    color: #a0c2e2;
-    text-align: center;
-}
-
+ 
 .container .hero-content p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 2;
     text-align: center;
     color: #8d99af;
+    font-weight: 800;
 }
 
 .container .btn {
