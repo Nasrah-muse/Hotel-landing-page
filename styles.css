@@ -212,7 +212,7 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-block: 100px;
+    margin-block: 50px;
     background-color: rgba(75, 103, 156, 0.1);
     border-radius: 50px;
     padding: 0 20px;
@@ -303,13 +303,13 @@ header {
 
 }
 
-.services h2 {
+.services  .container h2 {
     font-weight: 800;
     color: #e31833;
     text-align: center;
 }
 
-.services h2 span {
+.services .container h2 span {
     color: #a0c2e2;
 
 
@@ -397,14 +397,13 @@ header {
 
 .gallery {
     width: 100%;
-    height: 200vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     margin-top: 100px;
-    
-   }
+     margin-top: 50px;
+    }
 
 .gallery .container {
     width: 100%;
@@ -422,7 +421,7 @@ header {
     text-align: center;
 }
 .container h2 span{
-    color: #8d99af;
+    color: #2b2d42;
 }
 .container .gallery-images{
     width: 100%;
@@ -556,7 +555,7 @@ header {
     height: 200vh;
      display: flex;
     flex-direction: column;
-    margin-block: 100px;
+    margin-block: 50px;
  }
 
 .rooms .container {
@@ -606,14 +605,14 @@ header {
     height: 500px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-      background-color:#a0c2e2;
-    box-shadow: 0 0 4px 2px #8d99af;
+    gap: 10px;
+      background-color:#fff;
+    box-shadow: 0 0 4px 2px rgba(0,0,0,0.1);
 
    }
  .room-card img{
     width: 100%;
-    height: 200px;
+    height: 250px;
  
  }
  .room-card .room-info{
@@ -625,14 +624,14 @@ header {
     padding: 0 10px;
      }
  .room-info h3{
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: #2b2d42;
   }
   .room-info p{
     font-size: 14px;
     line-height: 1.5;
-    color: #2b2d42;
+    color: #8d99af;
   }
   .room-info .room-specification{
     display: flex;
@@ -675,7 +674,7 @@ header {
     background-color: #8d99af;
     display: flex;
     flex-direction: column;
-    margin-block: 100px 0;
+    margin-block: 50px;
 }
 
 .reviews .container {
@@ -775,7 +774,7 @@ header {
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    margin-block: 100px;
+    margin-block: 50px;
     background: linear-gradient(rgba(91, 131, 189, 0.8), rgba(68, 149, 186, 0.8)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsfGVufDB8fDB8fHww') no-repeat center/cover;
 }
 
