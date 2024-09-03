@@ -10,10 +10,12 @@ providing an excellent user experience on both desktop and mobile devices.
 ## Features
 
 - **Hero Section**: Captivating banner with a call to action.
-- **About Section**: Attractive section highlighting the hotel's history, mission, and unique offerings.
+- **Rooms Section**: Comprehensive details on various room types, including pricing, amenities, and availability.
+- **Gallery Section**: A visually appealing gallery showcasing high-quality images of the hotel, rooms, and events.
 - **Services Section**: Detailed information on room rentals, dining options, event venues, and other services.
 - **Review Section**: Testimonials from satisfied customers.
-- **Booking Section**: Easy-to-use booking form.
+- **Reservation Section**: Easy-to-use reservation form.
+- **About Section**: Attractive section highlighting the hotel's history, mission, and unique offerings.
 - **Responsive Design**: Optimized for various screen sizes.
 - **Interactive Navigation**: Smooth scrolling and dynamic menu highlighting.
 
